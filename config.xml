@@ -2,7 +2,7 @@
 
   <name>bootstrapphonegap</name>
 
-  <description>Hello from Bathina. This is a new project built with bootstrap.</description>
+  <description>bootstrap project fm bathina.</description>
 
   <author href="http://phonegap.com" email="support@phonegap.com">Bathina Team</author>
   <content src="index.html"/>
@@ -21,12 +21,15 @@
   <preference name="exit-on-suspend" value="false"/>
   <preference name="show-splash-screen-spinner" value="true"/>
 
-  <preference name="auto-hide-splash-screen" value="false"/>
+  <preference name="SplashScreen" value="screen"/>
+
+  <preference name="SplashScreenDelay" value="7000" />
+
   <preference name="disable-cursor" value="false"/>
 
+  <preference name="android-installLocation" value="auto"/>
 
-  <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="7000" />
+<!--  <preference name="auto-hide-splash-screen" value="false"/>  -->
 
   <preference name="android-installLocation" value="auto"/>
 
@@ -76,7 +79,9 @@
   <gap:splash src="www/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
 
+<!--
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+-->
 
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
@@ -88,7 +93,7 @@
   <allow-intent href="geo:*"/>
 
   <platform name="android">
-    <allow-intent href="market:*"/>
+	  <allow-intent href="market:*"/>
   </platform>
 
 <!--
